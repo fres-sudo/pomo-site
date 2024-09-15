@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.dotted-background {
+  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dotted-background-radial {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 16px 16px;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.dotted-background-radial::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(ellipse 50% 50% at 50% 50%, transparent 1%, rgba(0, 0, 0, 1) 90%);
+  z-index: 1;
+}
+
+.glassmorphism {
+  background: rgba(54, 54, 54, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(54, 54, 54, 0.19);
+}

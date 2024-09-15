@@ -14,9 +14,11 @@
     "lucide-react": "^0.438.0",
     "next": "14.2.7",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
+    "nodemailer": "^6.9.15",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
