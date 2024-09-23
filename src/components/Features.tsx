@@ -15,8 +15,8 @@ function Features() {
         "Pomo is tailored on your needs, we ran some benchmark on real people to enusure to give the best feature.",
     },
     {
-      title: "Feature 3",
-      description: "Description of feature 3",
+      title: "Easy Scheduling",
+      description: "Pomo offers an intuitive way to schedule your work and yout tasks to take everything under control",
     },
   ];
 

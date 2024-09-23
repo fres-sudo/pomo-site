@@ -30,7 +30,6 @@ const changelogEntries = [
 const ChangelogPage: React.FC = () => {
   return (
     <DottedBackgroundWithContent>
-      <Navbar />
       <div className="text-white h-full flex flex-col justify-between relative overflow-hidden py-24 lg:py-32">
         <div
           aria-hidden="true"
@@ -58,7 +57,6 @@ const ChangelogPage: React.FC = () => {
             <Changelog entries={changelogEntries} />
           </div>
         </div>
-        <Footer />
       </div>
     </DottedBackgroundWithContent>
   );

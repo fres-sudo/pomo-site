@@ -10,7 +10,6 @@ const ContactPage: React.FC = () => {
     <DottedBackgroundWithContent>
       {/* Hero */}
       <div className="flex flex-col min-h-full pb-5">
-        <Navbar />
         <div className="text-white flex-grow flex flex-col items-center justify-between relative overflow-hidden py-24 lg:py-32">
           {/* Gradients */}
           <div
@@ -40,8 +39,6 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* Footer */}
-        <Footer />
       </div>
     </DottedBackgroundWithContent>
   );

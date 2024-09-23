@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <Navbar />
       <Hero />
       <div className="py-5 bg-black text-white/60 border-t border-b border-white/20">
         <p className="text-center">
@@ -33,10 +32,6 @@ export default function Home() {
       <Features />
       <FreeTicker />
       <section id="faq"><FAQs /></section>
-
-
-      <CallToAction />
-      <Footer />
     </>
   );
 }

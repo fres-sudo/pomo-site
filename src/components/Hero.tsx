@@ -17,7 +17,7 @@ function Hero() {
               Version 1.0 is here{" "}
             </span>
             <a href="/changelog" className="inline-flex items-center gap-1">
-              Read rore <ArrowRight className="h-4 w-4" />{" "}
+              Read more <ArrowRight className="h-4 w-4" />{" "}
             </a >
           </a>
         </div>
@@ -25,7 +25,7 @@ function Hero() {
           <div className="inline-flex relative">
             <h1 className="text-7xl sm:text-9xl flex-col font-bold text-center leading-tight">
               Your <br />
-              <span className="underline decoration-wavy underline-offset-8">Pomodoro</span> <br />
+              <span className="">Pomodoro</span> <br />
               Buddy
             </h1>
             <motion.div

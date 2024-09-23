@@ -1,16 +1,13 @@
 
 import React from 'react';
 import Image from 'next/image'; // For loading avatar
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import DottedBackgroundWithContent from '@/components/DottedBackground';
 
 const AboutMePage: React.FC = () => {
   return (
-    <div className='h-screen'>
+    <div >
       <DottedBackgroundWithContent>
-        <Navbar />
-        <div className="text-white h-full my-auto flex flex-grow flex-col justify-between items-center relative overflow-hidden py-24 lg:py-32"> {/* Gradients */}
+        <div className="text-white flex flex-col flex-grow justify-between items-center relative overflow-hidden py-24 lg:py-32"> {/* Gradients */}
           <div
             aria-hidden="true"
             className="flex absolute -top-96 start-1/2 transform -translate-x-1/2"
@@ -54,8 +51,6 @@ const AboutMePage: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <Footer />
       </DottedBackgroundWithContent>
     </div>
 
