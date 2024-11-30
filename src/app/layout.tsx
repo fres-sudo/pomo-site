@@ -7,24 +7,28 @@ import Footer from "@/components/Footer";
 const dmSans = Inter_Tight({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pomo Focus",
-  description: "Your pomodoro buddy.",
+	title: "Pomo",
+	description: "Your pomodoro buddy.",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" >
-      <body className={clsx(dmSans.className, "antialiased bg-black ")}>
-        <Navbar />
-        {children}
-        <div className="place-items-end justify-center text-xs md:text-sm gap-4 md:gap-12 m-6">
-          <Footer />
-        </div>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body
+				className={clsx(
+					dmSans.className,
+					"antialiased max-w-screen bg-black "
+				)}>
+				<Navbar />
+				{children}
+				<div className="place-items-end justify-center text-xs md:text-sm gap-4 md:gap-12 m-6">
+					<Footer />
+				</div>
+			</body>
+		</html>
+	);
 }

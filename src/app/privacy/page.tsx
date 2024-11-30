@@ -9,7 +9,6 @@ const PrivacyPolicy: React.FC = () => {
   return (
     <div className=' min-h-screen'>
       <DottedBackgroundWithContent>
-        <Navbar />
         <div className="text-white flex flex-col flex-grow justify-between items-center relative overflow-hidden py-24 lg:py-32"> {/* Gradients */}
           <div
             aria-hidden="true"
@@ -153,9 +152,6 @@ const PrivacyPolicy: React.FC = () => {
         </div>
 
       </DottedBackgroundWithContent>
-      <div className="mx-auto">
-        <Footer />
-      </div>
     </div>
 
 

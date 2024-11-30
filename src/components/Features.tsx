@@ -7,7 +7,7 @@ function Features() {
     {
       title: "Open Source",
       description:
-        "The project is open source and its codebase is be available on github forever. Contributors are welocme ;)",
+        "The project is open source and its codebase is be available on Github forever. Contributors are welocme ;)",
     },
     {
       title: "What you need",
@@ -16,7 +16,8 @@ function Features() {
     },
     {
       title: "Easy Scheduling",
-      description: "Pomo offers an intuitive way to schedule your work and yout tasks to take everything under control",
+      description:
+        "Pomo offers an intuitive way to schedule your work and yout tasks to take everything under control",
     },
   ];
 
@@ -29,23 +30,17 @@ function Features() {
           </h2>
           <div className="max-w-xl mx-auto">
             <p className="text-center mt-5 text-xl text-white/70">
-              Enjoy customizable list, team work tools, and smart tracking all in
-              one place. Set tasks, get reminders, and see your progress simply
-              and quickly.
+              Enjoy customizable list, team work tools, and smart tracking all
+              in one place. Set tasks, get reminders, and see your progress
+              simply and quickly.
             </p>
           </div>
           <div className="mt-16 flex flex-col sm:flex-row gap-4">
             {features.map(({ title, description }) => (
-              <Feature
-                key={title}
-                title={title}
-                description={description}
-              />
+              <Feature key={title} title={title} description={description} />
             ))}
           </div>
-
         </div>
-
       </div>
     </DottedBackgroundWithContent>
   );

@@ -15,7 +15,7 @@ const AboutMePage: React.FC = () => {
             <div className="bg-gradient-to-tl blur-3xl w-[90rem] h-[50rem] rounded-full origin-top-left -rotate-12 -translate-x-[15rem] from-indigo-500 via-indigo-800 to-background" />
           </div>
           {/* End Gradients */}
-          <div className="relative glassmorphism max-w-5xl mx-4">
+          <div className="relative glassmorphism max-w-5xl mx-4 mb-36">
             <div className="container py-10 lg:py-16">
               <div className="max-w-2xl text-center mx-auto">
                 {/* Avatar */}

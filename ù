@@ -28,7 +28,7 @@ function ProductShowcase() {
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 -gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <motion.div style={{
             opacity: opacity,
             rotateX: rotateX,
@@ -65,21 +65,6 @@ function ProductShowcase() {
             <Image
               ref={appImage}
               src="/mobile-timer.png"
-              width={600}
-              height={200}
-              className="mt-14"
-              alt="product" />
-          </motion.div>
-
-          <motion.div
-            style={{
-              opacity: opacity,
-              rotateX: rotateX,
-              transformPerspective: "800px",
-            }}>
-            <Image
-              ref={appImage}
-              src="/mobile-tasks.png"
               width={600}
               height={200}
               className="mt-14"

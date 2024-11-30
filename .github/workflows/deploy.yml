@@ -1,0 +1,47 @@
+name: Build and Deploy Next.js Static Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build and Deploy Next.js Site on VPS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies and Build
+        run: |
+          npm ci
+          npm run build
+          npm run export
+
+      - name: Install SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy Static Files and Dockerfile to VPS
+        run: |
+          scp -r ./out ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.WORK_DIR }}
+          scp Dockerfile ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.WORK_DIR }}
+      - name: Build and Run Docker Container on VPS
+        run: |
+          ssh deploy@${{ secrets.SSH_HOST }} << 'EOF'
+          cd ${{ secrets.WORK_DIR }}
+          docker build -t nextjs-static .
+          docker stop nextjs-static-container || true
+          docker rm nextjs-static-container || true
+          docker run -d --name nextjs-static-container -p 8080:80 nextjs-static
+          EOF
+

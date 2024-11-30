@@ -58,7 +58,7 @@ function Navbar() {
               href="/contact"
               className="text-white hover:text-opacity-100 transition text-opacity-60"
             >
-              Help
+              Contact Us
             </a>
             <a href="/">
               <button className="bg-white py-2 px-4 rounded-lg">Get for free</button>
@@ -116,7 +116,7 @@ function Navbar() {
               className="text-white hover:text-opacity-100 transition text-opacity-60 flex items-center"
             >
               <LinkIcon className="w-4 h-4 mr-2" />
-              Help
+              Contact Us
             </a>
             <a href="/">
               <button className="bg-white py-2 px-4 rounded-lg w-full flex items-center justify-center">
