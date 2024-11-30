@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Dependencies and Build
         run: |
-          bun ci
+          bun install --frozen-lockfile
           bun run build
 
       - name: Install SSH Key
