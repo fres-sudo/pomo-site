@@ -20,9 +20,8 @@ jobs:
 
       - name: Install Dependencies and Build
         run: |
-          npm ci
-          npm run build
-          npm run export
+          bun ci
+          bun run build
 
       - name: Install SSH Key
         run: |
