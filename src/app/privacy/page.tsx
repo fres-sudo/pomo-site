@@ -23,7 +23,7 @@ const PrivacyPolicy: React.FC = () => {
                 <div className="p-6 font-sans text-white">
                   <h1 className="text-2xl font-bold">Privacy Policy</h1>
                   <p className="mt-4">
-                    This privacy policy applies to the Pomo app (hereby referred to as "Application") for mobile devices that was created by Francesco Calicchio (hereby referred to as "Service Provider") as an Open Source service. This service is intended for use "AS IS".
+                    This privacy policy applies to the Pomo app (hereby referred to as &quot;Application&quot;) for mobile devices that was created by Francesco Calicchio (hereby referred to as &quot;Service Provider&quot;) as an Open Source service. This service is intended for use &quot;AS IS&quot;.
                   </p>
 
                   <section className="mt-6">
@@ -32,7 +32,7 @@ const PrivacyPolicy: React.FC = () => {
                       The Application collects information when you download and use it. This information may include information such as:
                     </p>
                     <ul className="list-disc list-inside ml-4 mt-2">
-                      <li>Your device's Internet Protocol address (e.g. IP address)</li>
+                      <li>Your device&apos;s Internet Protocol address (e.g. IP address)</li>
                       <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
                       <li>The time spent on the Application</li>
                       <li>The operating system you use on your mobile device</li>
@@ -45,7 +45,7 @@ const PrivacyPolicy: React.FC = () => {
                   {/* Hidden Location Data Section */}
                   <section className="hidden">
                     <p>
-                      The Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in the following ways:
+                      The Application collects your device&apos;s location, which helps the Service Provider determine your approximate geographical location and make use of in the following ways:
                     </p>
                     <ul className="list-disc list-inside ml-4 mt-2">
                       <li>Geolocation Services: Personalized content, relevant recommendations, and location-based services.</li>
